@@ -105,13 +105,7 @@ export function Hero() {
           className="mt-12 flex flex-wrap gap-8 justify-center text-center"
         >
           <div>
-            <div className="text-3xl mb-1">$1.2M</div>
-            <div className="text-gray-600">Market Cap</div>
-          </div>
-          <div>
-            <div className="text-3xl mb-1">10K+</div>
-            <div className="text-gray-600">Holders</div>
-          </div>
+            
           <div>
             <div className="text-3xl mb-1">100%</div>
             <div className="text-gray-600">Community Owned</div>
