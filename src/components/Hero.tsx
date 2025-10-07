@@ -106,9 +106,6 @@ export function Hero() {
         >
           <div>
             
-          <div>
-            <div className="text-3xl mb-1">100%</div>
-            <div className="text-gray-600">Community Owned</div>
           </div>
         </motion.div>
       </div>
