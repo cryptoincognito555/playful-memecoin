@@ -102,9 +102,6 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-12 flex flex-wrap gap-8 justify-center text-center"
-        >
-          <div>
             
           </div>
         </motion.div>
