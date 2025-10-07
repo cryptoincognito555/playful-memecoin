@@ -97,9 +97,3 @@ export function Hero() {
             View Chart
           </Button>
         </motion.div>
-
-        
-      </div>
-    </section>
-  );
-}
