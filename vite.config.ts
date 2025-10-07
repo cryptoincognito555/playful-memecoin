@@ -13,7 +13,8 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    outDir: 'build',
+    "deploy": "gh-pages -d build"
+,
   },
   server: {
     port: 3000,
