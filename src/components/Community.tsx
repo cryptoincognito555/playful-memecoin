@@ -6,14 +6,14 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: Twitter,
-    handle: "@WobbleCoin",
+    handle: "@wobbleonsolana",
     color: "from-blue-400 to-blue-600",
     hoverColor: "hover:from-blue-500 hover:to-blue-700",
   },
   {
     name: "Telegram",
     icon: Send,
-    handle: "t.me/wobblecoin",
+    handle: "t.me/wobbleonsolana",
     color: "from-sky-400 to-sky-600",
     hoverColor: "hover:from-sky-500 hover:to-sky-700",
   },
