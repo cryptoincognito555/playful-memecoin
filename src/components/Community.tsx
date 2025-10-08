@@ -6,6 +6,7 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: Twitter,
+    url: "https://twitter.com/Wobbleonsolana",
     handle: "@wobbleonsolana",
     color: "from-blue-400 to-blue-600",
     hoverColor: "hover:from-blue-500 hover:to-blue-700",
@@ -13,6 +14,7 @@ const socialLinks = [
   {
     name: "Telegram",
     icon: Send,
+    url: "https://t.me/wobbleonsolana",
     handle: "t.me/wobbleonsolana",
     color: "from-sky-400 to-sky-600",
     hoverColor: "hover:from-sky-500 hover:to-sky-700",
@@ -56,18 +58,21 @@ export function Community() {
               whileHover={{ y: -8 }}
               className="group"
             >
-              <Button
-                variant="outline"
-                className={`w-full h-auto py-8 rounded-3xl border-2 bg-gradient-to-br ${social.color} ${social.hoverColor} text-white hover:text-white border-transparent shadow-lg hover:shadow-2xl transition-all`}
-              >
-                <div className="flex flex-col items-center gap-3">
-                  <social.icon className="w-10 h-10" />
-                  <div>
-                    <div className="text-lg">{social.name}</div>
-                    <div className="text-sm opacity-90">{social.handle}</div>
-                  </div>
-                </div>
-              </Button>
+              Button
+        asChild
+        variant="outline"
+        className={`w-full h-auto py-8 rounded-3xl border-2 bg-gradient-to-br ${social.color} ${social.hoverColor} text-white hover:text-white border-transparent shadow-lg hover:shadow-2xl transition-all`}
+      >
+        <a href={social.url} target="_blank" rel="noopener noreferrer">
+          <div className="flex flex-col items-center gap-3">
+            <social.icon className="w-10 h-10" />
+            <div>
+              <div className="text-lg">{social.name}</div>
+              <div className="text-sm opacity-90">{social.handle}</div>
+            </div>
+          </div>
+        </a>
+      </Button>
             </motion.div>
           ))}
         </div>
