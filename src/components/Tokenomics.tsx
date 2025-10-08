@@ -17,13 +17,13 @@ const tokenomicsData = [
   {
     icon: Users,
     label: "Community",
-    value: "95%",
+    value: "90%",
     color: "from-blue-500 to-blue-600",
   },
   {
     icon: Rocket,
     label: "Marketing",
-    value: "5%",
+    value: "10%",
     color: "from-purple-500 to-pink-500",
   },
 ];
