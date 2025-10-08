@@ -22,45 +22,46 @@ export function Chatbot() {
   ]);
   const [inputValue, setInputValue] = useState("");
 
-  const handleSend = () => {
+  // ✅ Connect to backend API
+  async function sendMessageToBackend(userMessage: string) {
+    try {
+      const response = await fetch("https://wobble-sol-backend.onrender.com/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userMessage }),
+      });
+
+      const data = await response.json();
+      return data.reply || "Sorry, I didn’t understand that.";
+    } catch (error) {
+      console.error("Error connecting to backend:", error);
+      return "Oops! The server seems offline. Please try again later.";
+    }
+  }
+
+  // ✅ Handle sending messages
+  const handleSend = async () => {
     if (!inputValue.trim()) return;
 
     const userMessage: Message = {
-      id: messages.length + 1,
+      id: Date.now(),
       text: inputValue,
       sender: "user",
     };
-
     setMessages((prev) => [...prev, userMessage]);
+    const userInput = inputValue;
     setInputValue("");
 
-    // Simulate bot response
-    setTimeout(() => {
-      const botMessage: Message = {
-        id: messages.length + 2,
-        text: getBotResponse(inputValue),
-        sender: "bot",
-      };
-      setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
-  };
+    // Wait for bot reply from backend
+    const reply = await sendMessageToBackend(userInput);
 
-  const getBotResponse = (userInput: string) => {
-    const input = userInput.toLowerCase();
-    
-    if (input.includes("buy") || input.includes("purchase")) {
-      return "You can buy WOBBLE on our supported DEXs! Check out the Buy WOBBLE button on our homepage. Remember to always DYOR! 🚀";
-    } else if (input.includes("price") || input.includes("chart")) {
-      return "Check out our live chart to see WOBBLE's current price and performance! 📈";
-    } else if (input.includes("token") || input.includes("supply")) {
-      return "WOBBLE has a total supply of 1 billion tokens with 100% liquidity locked and contract renounced! 🔒";
-    } else if (input.includes("community") || input.includes("social")) {
-      return "Join our amazing community on Twitter, Telegram, and Discord! Links are in the Join the Wobble section. 🎉";
-    } else if (input.includes("roadmap") || input.includes("future")) {
-      return "We're constantly wobbling forward! Stay tuned to our socials for the latest updates and plans! 🗺️";
-    } else {
-      return "That's a great question! For more info, join our community channels or check out our website. Keep wobbling! 💜";
-    }
+    const botMessage: Message = {
+      id: Date.now() + 1,
+      text: reply,
+      sender: "bot",
+    };
+
+    setMessages((prev) => [...prev, botMessage]);
   };
 
   return (
