@@ -7,7 +7,7 @@ const socialLinks = [
     name: "Twitter",
     icon: Twitter,
     url: "https://twitter.com/Wobbleonsolana",
-    handle: "@wobbleonsolana",
+    handle: "@Wobbleonsolana",
     color: "from-blue-400 to-blue-600",
     hoverColor: "hover:from-blue-500 hover:to-blue-700",
   },
@@ -58,20 +58,20 @@ export function Community() {
               whileHover={{ y: -8 }}
               className="group"
             >
-              Button
+              <Button
         asChild
         variant="outline"
         className={`w-full h-auto py-8 rounded-3xl border-2 bg-gradient-to-br ${social.color} ${social.hoverColor} text-white hover:text-white border-transparent shadow-lg hover:shadow-2xl transition-all`}
       >
         <a href={social.url} target="_blank" rel="noopener noreferrer">
-          <div className="flex flex-col items-center gap-4">
-            <social.icon className="w-8 h-8" />
-            <div>
-              <div className="text-lg">{social.name}</div>
-              <div className="text-sm opacity-90">{social.handle}</div>
-            </div>
-          </div>
-        </a>
+          <div className="flex flex-col items-center justify-center text-center gap-2">
+  <social.icon className="w-8 h-8" />
+  <div className="flex flex-col items-center justify-center leading-tight">
+    <span className="text-lg font-medium">{social.name}</span>
+    <span className="text-sm opacity-90">{social.handle}</span>
+  </div>
+</div>
+  </a>
       </Button>
             </motion.div>
           ))}
