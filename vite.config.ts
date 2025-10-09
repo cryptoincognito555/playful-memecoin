@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/playful-memecoin/', // 👈 ADD THIS LINE — use your repo name exactly
+  base: './', // 👈 ADD THIS LINE — use your repo name exactly
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
