@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "What is the total supply?",
-    answer: "The total supply of WOBBLE is 1 billion tokens. 95% is allocated to the community, and 5% is reserved for marketing and growth initiatives.",
+    answer: "The total supply of WOBBLE is 1 billion tokens. 90% is allocated to the community, and 10% is reserved for marketing and growth initiatives.",
   },
   {
     question: "Where can I see the price chart?",
