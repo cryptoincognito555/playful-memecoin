@@ -67,23 +67,7 @@ export function Tokenomics() {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-white p-10 rounded-3xl shadow-lg max-w-3xl mx-auto border-2 border-purple-100"
-        >
-          <h3 className="text-2xl mb-6 text-center">Contract Address</h3>
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-2xl break-all text-center border-2 border-purple-200">
-            <code className="text-sm text-gray-700">
-              0x1234...5678
-            </code>
-          </div>
-          <p className="text-center text-gray-500 mt-4 text-sm">
-            Always verify the contract address before purchasing!
-          </p>
-        </motion.div>
+        
       </div>
     </section>
   );
