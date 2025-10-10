@@ -96,7 +96,7 @@ export function HowToBuy() {
           <h3 className="text-2xl mb-4 text-center">Contract Address</h3>
           <div className="bg-gradient-to-r from-cyan-50 to-orange-50 p-5 rounded-2xl border-2 border-cyan-200">
             <code className="text-sm md:text-base text-gray-800 break-all block text-center">
-              0x01234567890abcdef1234567890abcdef12345678
+              DdNhek9NDH8bsmYPAtRV1pTemxZ1BHq3PN16kp7PQoNb
             </code>
           </div>
           <p className="text-center text-gray-500 mt-4 text-sm">
