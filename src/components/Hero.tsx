@@ -90,6 +90,8 @@ export function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-orange-500 hover:from-cyan-600 hover:to-orange-600 text-lg px-8 py-6 rounded-full shadow-lg shadow-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/70 transition-all">
+           onClick={() => window.open("https://jup.ag/tokens/DdNhek9NDH8bsmYPAtRV1pTemxZ1BHq3PN16kp7PQoNb", "_blank")}
+>
             Buy WOBBLE
             <ArrowRight className="ml-2" />
           </Button>
