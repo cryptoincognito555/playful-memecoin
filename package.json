@@ -1,7 +1,6 @@
 {
       "name": "playful-memecoin-website",
       "version": "0.1.0",
-      "homepage": "https://cryptoincognito555.github.io/playful-memecoin",
       "private": true,
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
