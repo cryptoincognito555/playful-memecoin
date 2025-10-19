@@ -19,13 +19,6 @@ const socialLinks = [
     color: "from-sky-400 to-sky-600",
     hoverColor: "hover:from-sky-500 hover:to-sky-700",
   },
-  {
-    name: "Discord",
-    icon: MessageCircle,
-    handle: "discord.gg/wobble",
-    color: "from-purple-400 to-purple-600",
-    hoverColor: "hover:from-purple-500 hover:to-purple-700",
-  },
 ];
 
 export function Community() {

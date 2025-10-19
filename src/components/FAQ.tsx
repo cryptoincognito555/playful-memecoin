@@ -91,26 +91,6 @@ export function FAQ() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-12 text-center bg-gradient-to-r from-cyan-500 to-orange-500 p-8 rounded-3xl text-white shadow-xl shadow-cyan-500/30"
         >
-          <h3 className="text-2xl mb-3">Still have questions?</h3>
-          <p className="mb-6 opacity-90">
-            Join our community and ask away! We're always happy to help.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#"
-              className="bg-white text-cyan-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors inline-block"
-            >
-              Join Telegram
-            </a>
-            <a
-              href="#"
-              className="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-full hover:bg-white/30 transition-colors inline-block"
-            >
-              Join Discord
-            </a>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+  
   );
 }
