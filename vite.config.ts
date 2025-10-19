@@ -4,7 +4,8 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // 👈 ADD THIS LINE — use your repo name exactly
+  // 👇 This is the correct path for your custom domain
+  base: '/',
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
@@ -13,8 +14,7 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    "deploy": "gh-pages -d build"
-,
+  
   },
   server: {
     port: 3000,

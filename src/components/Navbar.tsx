@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import wobbleLogo from "figma:asset/1b947db5ace057cb093e8b99a352a25b2a7cef19.png";
+const wobbleLogo = "/assets/wobble.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

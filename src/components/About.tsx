@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import wobbleLogo from "figma:asset/1b947db5ace057cb093e8b99a352a25b2a7cef19.png";
+// @ts-ignore: external figma asset module resolution
+const wobbleLogo = "/assets/wobble.png"
 
 export function About() {
   return (

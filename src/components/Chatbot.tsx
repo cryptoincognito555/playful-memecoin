@@ -3,7 +3,7 @@ import { MessageCircle, X, Send } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import wobbleLogo from "figma:asset/1b947db5ace057cb093e8b99a352a25b2a7cef19.png";
+const wobbleLogo = "/assets/wobble.png"
 
 interface Message {
   id: number;
